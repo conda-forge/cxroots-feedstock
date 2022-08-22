@@ -26,6 +26,7 @@ requirements:
     - numpydoc
     - python >=3.6
     - scipy
+    - rich
 
 test:
   imports:
