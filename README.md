@@ -1,11 +1,11 @@
-About cxroots
-=============
+About cxroots-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cxroots-feedstock/blob/main/LICENSE.txt)
 
 Home: https://rparini.github.io/cxroots/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cxroots-feedstock/blob/main/LICENSE.txt)
 
 Summary: Find all the roots (zeros) of a complex analytic function within a given contour in the complex plane.
 
