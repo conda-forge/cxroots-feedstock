@@ -1,5 +1,5 @@
 {% set name = "cxroots" %}
-{% set version = "2.0.0" %}
+{% set version = "2.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cxroots-{{ version }}.tar.gz
-  sha256: 2fe93c30b16b6db0b43374238aa235745807bde7f63793a40d5e2c058815f680
+  sha256: 46b464922ba3c8a5fea044bbba39e613bb95e157a291171bb823b65589ea5734
 
 build:
   noarch: python
