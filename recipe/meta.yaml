@@ -1,5 +1,5 @@
 {% set name = "cxroots" %}
-{% set version = "2.0.1" %}
+{% set version = "3.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cxroots-{{ version }}.tar.gz
-  sha256: 46b464922ba3c8a5fea044bbba39e613bb95e157a291171bb823b65589ea5734
+  sha256: e9bb1f2dbf63e28a4dd081d0fb4d6dbb0d33effdb2df7e993c171f6d6a9fd24e
 
 build:
   noarch: python
@@ -18,13 +18,12 @@ requirements:
   host:
     - pip
     - pytest-runner
-    - python >=3.6
+    - python >=3.10
   run:
     - mpmath
-    - numdifftools >=0.9.39
-    - numpy <1.25
+    - numpy
     - numpydoc
-    - python >=3.6
+    - python >=3.10
     - scipy
     - rich
 
