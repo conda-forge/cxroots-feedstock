@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "cxroots" %}
 {% set version = "3.1.0" %}
 
@@ -12,18 +13,18 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
     - pytest-runner
-    - python >=3.10
+    - python {{ python_min }}
   run:
     - mpmath
     - numpy
     - numpydoc
-    - python >=3.10
+    - python >={{ python_min }}
     - scipy
     - rich
 
@@ -36,6 +37,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://rparini.github.io/cxroots/
