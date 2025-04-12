@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "cxroots" %}
-{% set version = "3.0.2" %}
+{% set version = "3.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cxroots-{{ version }}.tar.gz
-  sha256: e9bb1f2dbf63e28a4dd081d0fb4d6dbb0d33effdb2df7e993c171f6d6a9fd24e
+  sha256: c41a81db1080a65de78fa88d471ce8f4f8870b6d9016f3c2607208d027117e39
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
